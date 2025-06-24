@@ -1,4 +1,4 @@
-// Даны два числа. Проверить, что первые цифры этих чисел совпадают.
+// Даны два числа. Проверить, совпадают ли их первые цифры.
 
 function checkFirstNumbers(firstNumber, secondNumber) {
   const firstStrNumber = Math.abs(firstNumber).toString();
