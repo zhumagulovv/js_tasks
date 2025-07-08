@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Добавить user</h2>
+      <form class="add-user" id="add-user">
+        <input class="username" id="username" type="text" placeholder="Имя" />
+        <input class="surname" id="surname" type="text" placeholder="Фамилия" />
+        <input
+          class="work-experience"
+          id="work-experience"
+          type="text"
+          placeholder="Стаж работы"
+        />
+        <input
+          class="position"
+          id="position"
+          type="text"
+          placeholder="Должность"
+        />
+        <button class="user-btn" id="user-btn" type="submit">Добавить</button>
+      </form>
+      <div class="users__content">
+        <h2 class="users__title">Users</h2>
+        <ul class="users"></ul>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

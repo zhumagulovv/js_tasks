@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  padding: 5px 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.add-user {
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "username surname" "work-experience position" "user-btn user-btn";
+  gap: 10px;
+}
+
+.username {
+  grid-area: username;
+}
+
+.surname {
+  grid-area: surname;
+}
+
+.work-experience {
+  grid-area: work-experience;
+}
+
+.position {
+  grid-area: position;
+}
+
+.user-btn {
+  grid-area: user-btn;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.users__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.users__title {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  place-items: center;
+}
+
+.user {
+  margin: 20px 0;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user__btns {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.user__btns button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
