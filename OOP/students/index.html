@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons -->
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Добавление студенты</h2>
+      <form class="add-students">
+        <input class="surname" type="text" placeholder="Фамилия" />
+        <input class="username" type="text" placeholder="Имя" />
+        <input class="lastname" type="text" placeholder="Отчество" />
+        <input class="age" type="text" placeholder="Возраст" />
+        <input class="hobby" type="text" placeholder="Хобби" />
+        <button class="add button" type="submit">Добавить</button>
+      </form>
+      <div class="sort-by">
+        <h2 class="title">Сортировка</h2>
+        <div class="sort-by-button">
+          <button class="age-a button">По возрасту</button>
+          <button class="alphabet button">По алфавиту</button>
+        </div>
+      </div>
+      <div class="students">
+        <h2 class="title">Студенты</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Ф.И.О</th>
+              <th>Возраст</th>
+              <th>Год</th>
+              <th>Хобби</th>
+            </tr>
+          </thead>
+          <tbody class="result-students"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
