@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 500px;
+  padding: 30px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.file-upload input[type="file"] {
+  display: none; /* или visibility: hidden; */
+}
+
+/* Стилизуем label, который будет выглядеть как кнопка */
+.file-upload-label {
+  display: inline-block; /* или block */
+  padding: 10px 20px;
+  background-color: #007bff; /* Пример цвета фона */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Указывает, что это кликабельный элемент */
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.file-upload-label:hover {
+  background-color: #0056b3; /* Цвет при наведении курсора */
+}
+
+/* Опционально: стилизация при выборе файла */
+.file-upload input[type="file"]:valid + .file-upload-label {
+  background-color: #28a745; /* Цвет при успешном выборе файла */
+}
+
+.file-upload input[type="file"]:valid + .file-upload-label:hover {
+  background-color: #218838;
+}
+
+#cardTemplate {
+  width: 1200px;
+  height: auto;
+  border: 2px solid black;
+}
